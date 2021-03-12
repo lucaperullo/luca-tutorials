@@ -104,7 +104,12 @@
           <div class="liquid3"></div
         ></a>
       </div>
-      <video controls src="introduction.mp4"></video>
+      <video
+        id="episodeVideo"
+        controls
+        src="introduction.mp4"
+        onended="run()"
+      ></video>
 
       <form
         style="margin-bottom: 10vh"
@@ -140,6 +145,18 @@
         document.querySelector("video").play();
         document.querySelector("video").playbackRate = 4.0;
       };
+    </script>
+    <script>
+      var video_count = 1;
+      var videoPlayer = document.getElementById("episodeVideo");
+
+      function run() {
+        video_count++;
+        if (video_count == 4) video_count = 1;
+        var nextVideo = "introduction" + video_count + ".mp4";
+        videoPlayer.src = nextVideo;
+        videoPlayer.play();
+      }
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
