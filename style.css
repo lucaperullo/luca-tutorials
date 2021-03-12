@@ -13,6 +13,7 @@ body {
   justify-content: space-between !important;
 }
 .navbar {
+  box-shadow: -1px 9px 20px 7px black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -39,7 +40,7 @@ video {
 a {
   position: relative;
   padding: 20px 50px;
-  width: 200px;
+  width: 400px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -55,15 +56,15 @@ a span {
 a .liquid {
   position: absolute;
   left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
+  top: -180px;
+  width: 400px;
+  height: 400px;
   background: #4973ff;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 a:hover .liquid {
-  top: -120px;
+  top: -250px;
 }
 a .liquid::before,
 a .liquid::after {
@@ -88,15 +89,15 @@ a .liquid::after {
 a .liquid2 {
   position: absolute;
   left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
+  top: -180px;
+  width: 400px;
+  height: 400px;
   background: #a56c2b;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 a:hover .liquid2 {
-  top: -120px;
+  top: -250px;
 }
 a .liquid2::before,
 a .liquid2::after {
@@ -121,15 +122,15 @@ a .liquid2::after {
 a .liquid3 {
   position: absolute;
   left: 0;
-  top: -80px;
-  width: 200px;
-  height: 200px;
+  top: -180px;
+  width: 400px;
+  height: 400px;
   background: #8d0d3e;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
 a:hover .liquid3 {
-  top: -120px;
+  top: -250px;
 }
 a .liquid3::before,
 a .liquid3::after {
@@ -161,7 +162,8 @@ a .liquid3::after {
 }
 
 button {
-  border-radius: 40px;
+  box-shadow: -1px 9px 20px 7px black;
+  border-radius: none;
   border: none;
   width: 1200px;
 }
